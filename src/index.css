@@ -1,0 +1,61 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+}
+
+#dog-header-logo {
+    width: 100px;
+    height: 96px;
+    margin-top: 10px;
+}
+
+#page-header {
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+#dogs-cats {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ffffff9a;
+    background: linear-gradient(
+        to right bottom,
+        rgba(214, 246, 251, 0.8),
+        rgba(197, 248, 255, 0.4)
+    );
+    border-radius: 12px;
+    border-width: thin;
+    padding: 15px;
+}
+
+#btn-to-adopt-page {
+    margin: 25px auto 0;
+    border-radius: 12px;
+    border-width: thin;
+    font-size: 25px;
+}
+
+#btn-section {
+    display: flex;
+    justify-content: center;
+}
+
+/* -------------------------------------------------- */
+
+
+#petContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+li {
+    list-style-type: none;
+}
