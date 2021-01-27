@@ -1,6 +1,6 @@
 const config = {
     API_ENDPOINT:
-        "http://localhost:8000"
+        "https://fierce-sands-96102.herokuapp.com"
 }
 
 export default config;

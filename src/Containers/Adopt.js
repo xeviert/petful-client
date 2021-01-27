@@ -20,7 +20,7 @@ export default class Adopt extends Component {
         this.getCats();
         this.getDogs();
         this.getPeople();
-        // this.timeMechanism();
+        this.timeMechanism();
         this.addToList();
     }
 
