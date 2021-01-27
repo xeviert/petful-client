@@ -20,7 +20,8 @@ export default class Adopt extends Component {
         this.getCats();
         this.getDogs();
         this.getPeople();
-        this.timeMechanism();
+        // this.timeMechanism();
+        this.addToList();
     }
 
     componentWillUnmount() {
@@ -29,14 +30,9 @@ export default class Adopt extends Component {
 
     timeMechanism = () => {
         this.timeout = setInterval(() => {
-            // if (this.state.people.length < 5) {
-            //     this.addPerson('Just Beiber')
-            //     return;
-            // }
             if (this.state.people[0] !== this.state.name) {
-                // const name = this.state.people[0];
-                // this.deletePerson(name);
                 this.adoptRandom();
+                this.addToList()
                 return;
             }
             if (this.state.message === "You're next!") {
@@ -50,7 +46,16 @@ export default class Adopt extends Component {
                 this.setMessage("You're next!");
                 return;
             }
-        }, 2500);
+        }, 3000);
+    }
+
+    addToList = () => {
+
+        const names = ['Xevier Tee', 'Louis Cid', 'Tara Pommy', 'Izzy Stankovic', 'Stephanie Orea', 'Gavin Rodriguez', 'Peyton Flores', 'Sarah MF Jackson', 'Ricky Gervais', 'Alex Kallaway', 'Graham Stephan']
+
+        const randomName = names[Math.floor(Math.random()*names.length)];
+
+        this.addPerson(randomName)
     }
 
     adoptRandom = () => {
