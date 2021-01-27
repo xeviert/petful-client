@@ -123,9 +123,9 @@ export default class Adopt extends Component {
         let { nextCat } = this.state;
         if (nextCat) {
             return (
-                <div className='petContainer'>
+                <div className='pet-container'>
                     <h3>{nextCat.name}</h3>
-                    <img src={nextCat.imageURL} alt='cat for adoption'></img>
+                    <img src={nextCat.imageURL} alt='cat for adoption' className='pet-pic'></img>
                     <li>gender: {nextCat.gender} </li>
                     <li>age: {nextCat.age} </li>
                     <li>breed: {nextCat.breed} </li>
@@ -140,9 +140,9 @@ export default class Adopt extends Component {
         let { nextDog } = this.state;
         if (nextDog) {
             return (
-                <div className='petContainer'>
+                <div className='pet-container'>
                     <h3>{nextDog.name}</h3>
-                    <img src={nextDog.imageURL} alt='dog for adoption'></img>
+                    <img src={nextDog.imageURL} alt='dog for adoption' className='pet-pic'></img>
                     <li>gender: {nextDog.gender} </li>
                     <li>age: {nextDog.age} </li>
                     <li>breed: {nextDog.breed} </li>
@@ -245,7 +245,7 @@ export default class Adopt extends Component {
                 <header id='page-header' className='links'>
                         <div>Petful</div>
                     <Link to='/'>
-                        <img id='dog-header-logo' alt='header dog logo' src='/dog-logo.png' />
+                        <img id='dog-header-logo' alt='header dog logo' src='/dog-logo-home.png' />
                     </Link>
                 </header>
 
@@ -271,15 +271,15 @@ export default class Adopt extends Component {
                 <br/>
                 <div> {message} </div>
                 <div className='info'>
-                <div>
+                <div id='name-form'>
                     <form onSubmit={(e) => {
                             this.handleSubmit(e)
                     }}>
                         <label>
                             Get added to the queue:
-                        </label>
+                        </label><br/>
                         <input type='text' name='name' />
-                        <button type='submit'>Add</button>
+                        <button type='submit' id='name-btn'>Add</button>
                     </form>
                 </div>
                 <br/>
@@ -292,12 +292,12 @@ export default class Adopt extends Component {
                 </div>
 
                 <br/>
-                <div>
-                    <b>Adoption Line:</b>
+                <div id='adoption-list'>
+                    <b className='center-list'>Adoption Line:</b><br/>
                     {people.length === 0 && <p>No one in line.</p>}
                     {people.map((person, index) => {
                         return (
-                            <p person={person} key={index}>
+                            <p person={person} key={index} className='center-list'>
                                 <li> {person + ' '} </li>
                             </p>
                         )

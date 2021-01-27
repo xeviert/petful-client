@@ -13,6 +13,7 @@
     font-size: 80px;
     display: flex;
     justify-content: center;
+    width: 95%;
 }
 
 #dogs-cats {
@@ -50,12 +51,115 @@ section {
 /* -------------------------------------------------- */
 
 
-#petContainer {
-    display: flex;
-    justify-content: space-around;
+.pet-container {
+    display: block;
+    margin: 0 auto 15px;
+    text-align: center;
+    background-color: #ffffff9a;
+    background: linear-gradient(
+        to right bottom,
+        rgba(214, 246, 251, 0.8),
+        rgba(197, 248, 255, 0.4)
+    );
+    border-radius: 12px;
+    border-width: thin;
+    padding: 8px 0;
 }
 
+.pet-pic {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#name-form {
+    display: flex;
+    justify-content: center;
+}
+
+#adoption-list {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff9a;
+    background: linear-gradient(
+        to right bottom,
+        rgba(214, 246, 251, 0.8),
+        rgba(197, 248, 255, 0.4)
+    );
+    border-radius: 12px;
+    border-width: thin;
+    padding: 8px 0;
+}
+
+.center-list {
+    margin: 0 auto;
+}
 
 li {
     list-style-type: none;
+    margin: 0 auto;
+}
+
+#name-btn, #adoptCat, #adoptDog {
+    margin-left: 3px;
+    border-radius: 8px;
+    border-width: thin;
+    font-size: 18px;
+}
+
+
+
+@media (min-width: 600px) {
+
+    #page-header {
+        font-size: 150px;
+        display: flex;
+        justify-content: center;
+        width: 95%;
+    }
+    #dog-header-logo {
+        width: 200px;
+        height: 188px;
+        margin-top: 10px;
+    }
+    #dogs-cats {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    section {
+        font-size: 35px;
+    }
+    #btn-to-adopt-page {
+        font-size: 40px;
+    }
+    .pet-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: 35px;
+    }
+    .pet-pic {
+        width: 99%;
+    }
+    #petContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .info{
+        font-size: 35px;
+    }
+    input {
+        width: 80%;
+        height: 32px;
+        border-radius: 8px;
+        border-width: thin;
+    }
+    #name-btn, #adoptCat, #adoptDog {
+        font-size: 22px;
+        
+    }
+
 }
