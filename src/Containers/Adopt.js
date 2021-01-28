@@ -278,7 +278,7 @@ export default class Adopt extends Component {
                         <label>
                             Get added to the queue:
                         </label><br/>
-                        <input type='text' name='name' />
+                        <input type='text' name='name' required />
                         <button type='submit' id='name-btn'>Add</button>
                     </form>
                 </div>
