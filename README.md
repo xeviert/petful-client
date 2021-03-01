@@ -6,9 +6,6 @@
 ### Skills used for client:
 JavaScript, React, HTML5, CSS3
 
-### Skills used for server: 
-
-
 ## Description
 Small project showcasing use of queue data structure. 
 
