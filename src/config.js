@@ -1,6 +1,6 @@
 const config = {
     API_ENDPOINT:
-        "https://fierce-bayou-34069.herokuapp.com"
+        "http://localhost:8000"
 }
- // ""
+
 export default config;

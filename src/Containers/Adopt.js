@@ -114,7 +114,7 @@ export default class Adopt extends Component {
             .then(res => res.json())
             .then(() => {
                 this.setState({
-                    people: [...this.state.people, name: name],
+                    people: [...this.state.people, name],
                 })
             })
     }
