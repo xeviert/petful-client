@@ -4,8 +4,8 @@
 }
 
 #dog-header-logo {
-    width: 100px;
-    height: 96px;
+    width: 80px;
+    height: 86px;
     margin-top: 10px;
 }
 
@@ -13,11 +13,11 @@
     font-size: 80px;
     display: flex;
     justify-content: center;
-    width: 95%;
+    width: 90%;
 }
 
 #dogs-cats {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
 }
 
@@ -26,11 +26,9 @@ section {
     margin: 0 auto;
     text-align: center;
     background-color: #ffffff9a;
-    background: linear-gradient(
-        to right bottom,
-        rgba(214, 246, 251, 0.8),
-        rgba(197, 248, 255, 0.4)
-    );
+    background: linear-gradient(to right bottom,
+            rgba(214, 246, 251, 0.8),
+            rgba(197, 248, 255, 0.4));
     border-radius: 12px;
     border-width: thin;
     padding: 15px;
@@ -56,11 +54,9 @@ section {
     margin: 0 auto 15px;
     text-align: center;
     background-color: #ffffff9a;
-    background: linear-gradient(
-        to right bottom,
-        rgba(214, 246, 251, 0.8),
-        rgba(197, 248, 255, 0.4)
-    );
+    background: linear-gradient(to right bottom,
+            rgba(214, 246, 251, 0.8),
+            rgba(197, 248, 255, 0.4));
     border-radius: 12px;
     border-width: thin;
     padding: 8px 0;
@@ -80,11 +76,9 @@ section {
     display: flex;
     flex-direction: column;
     background-color: #ffffff9a;
-    background: linear-gradient(
-        to right bottom,
-        rgba(214, 246, 251, 0.8),
-        rgba(197, 248, 255, 0.4)
-    );
+    background: linear-gradient(to right bottom,
+            rgba(214, 246, 251, 0.8),
+            rgba(197, 248, 255, 0.4));
     border-radius: 12px;
     border-width: thin;
     padding: 8px 0;
@@ -99,7 +93,9 @@ li {
     margin: 0 auto;
 }
 
-#name-btn, #adoptCat, #adoptDog {
+#name-btn,
+#adoptCat,
+#adoptDog {
     margin-left: 3px;
     border-radius: 8px;
     border-width: thin;
@@ -111,55 +107,67 @@ li {
 @media (min-width: 600px) {
 
     #page-header {
-        font-size: 150px;
+        font-size: 130px;
         display: flex;
         justify-content: center;
-        width: 95%;
+        width: 98%;
     }
+
     #dog-header-logo {
         width: 200px;
         height: 188px;
         margin-top: 10px;
     }
+
     #dogs-cats {
-        max-width: 100%;
+        max-width: 60%;
         height: auto;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
+
     section {
-        font-size: 35px;
+        font-size: 30px;
     }
+
     #btn-to-adopt-page {
-        font-size: 40px;
+        font-size: 30px;
     }
+
     .pet-container {
         display: flex;
         flex-direction: column;
         width: 100%;
-        font-size: 35px;
+        font-size: 25px;
     }
+
     .pet-pic {
-        width: 99%;
+        width: 98%;
     }
+
     #petContainer {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
-    .info{
-        font-size: 35px;
+
+    .info {
+        font-size: 30px;
     }
+
     input {
         width: 80%;
         height: 32px;
         border-radius: 8px;
         border-width: thin;
     }
-    #name-btn, #adoptCat, #adoptDog {
-        font-size: 22px;
-        
+
+    #name-btn,
+    #adoptCat,
+    #adoptDog {
+        font-size: 20px;
+
     }
 
 }

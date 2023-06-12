@@ -66,6 +66,12 @@ export class AppProvider extends Component {
       'Alex Kallaway',
       'Graham Stephan',
       'Nick Merks',
+      'Timmy Tatman',
+      'Simon Whistler',
+      'Cecilia Gamundi',
+      'Matt Ngo',
+      'Ivan Turrubiartes',
+      'Savannah Richards'
     ];
 
     const randomName = names[Math.floor(Math.random() * names.length)];
